@@ -1,4 +1,5 @@
 # JuliusEngedal.github.io
 
 først lave man read 
-mm
+mm Også det her 
+
