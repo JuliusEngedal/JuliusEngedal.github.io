@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* === Nav start === */
+
+.Navigation {
+  display: flex;
+  height: 9vh;
+  background-color: lightblue;
+}
+
+.mc-logo > img{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  padding-top: 2%;
+}
+
+.burger-menu{
+width: 2%;
+height: 35%;
+cursor: pointer;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+margin-left: 70%;
+margin-top: 1.5%;
+}
+
+.bar{
+  height: 7px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: black;
+}
+
+.change #bar1 {
+  transform: translateY(7px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+
+} 
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.sticky + .header-section{
+  padding-top: 60px;
+}
+
+
+.header-section >img{
+  width: 100%;
+}
+
+
+
+.header-section{
+  display: flex;
+
+}
+
+.header-overskrift{
+  margin: auto;
+  color: white;
+  margin-left: -65%;
+  font-size: 4vw;
+}
+
+
+/* === Nav slut === */
+
+footer{
+  height: 100vh;
+  background-color: green;
+}

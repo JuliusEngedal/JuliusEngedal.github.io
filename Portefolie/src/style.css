@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* === Navbar Start === */
+
+#navbar {
+  display: flex;
+  overflow: hidden;
+
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  width: 30%;
+  font-size: 4vw;
+  margin-left: 6vw;
+}
+
+/* Navbar links */
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+  width: 70%;
+  margin-top: 2vw;
+}
+
+.nav-links > a {
+  color: black;
+  text-decoration: none;
+}
+
+#navbar h1 {
+  font-size: 5rem;
+  font-family: "Atomic Age", cursive;
+}
+
+#navbar > a:hover {
+  background-color: #111;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*   .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  } */
+
+/* === Navbar slut === */
+
+.section {
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+.section > img{
+    width: 100%;
+    opacity: 0.7;
+    margin-bottom: -6px;
+}
+
+.first-s-text{
+    position: absolute;
+    top: 45%;
+    right: 70%;
+    color: white;
+}
+
+.first-article{
+    height: 60vh;
+    background: white;
+}
+
+.top-article-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 50px;
+}
