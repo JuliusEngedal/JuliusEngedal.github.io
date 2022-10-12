@@ -20,19 +20,18 @@
 }
 
 .burger-menu{
-width: 2%;
-height: 35%;
+width: 3vw;
+height: 6vh;
 cursor: pointer;
 display: flex;
 justify-content: space-around;
 flex-direction: column;
-margin-left: 70%;
-margin-top: 1.5%;
+margin-top:1.5vh;
+margin-left: 70vw;
 }
 
 .bar{
-  height: 7px;
-  width: 100%;
+  height: 0.8vh;
   background-color: black;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -69,6 +68,35 @@ margin-top: 1.5%;
   
 }
 
+ @media screen and (max-width:768px) {
+
+  .burger-menu{
+    display: flex;
+    margin-left: 60vw;
+    width: 5vw;
+  }
+
+  .bar{
+    margin-top: 5px;
+    
+  }
+  
+}
+
+
+@media screen and (max-width:425px) {
+
+  .burger-menu{
+    margin-left: 35vw;
+    width: 8vw;
+  }
+  
+} 
+
+/* === Nav slut === */
+
+/* = header section =  */
+
 .sticky + .header-section{
   padding-top: 60px;
 }
@@ -93,9 +121,26 @@ margin-top: 1.5%;
 }
 
 
-/* === Nav slut === */
 
 footer{
   height: 100vh;
   background-color: green;
 }
+
+/* === header section slut === */
+
+/* === article text === */
+
+.article-text{
+  text-align: center;
+}
+
+.article-text>h1{
+  font-size: 2.5vw;
+}
+
+.article-text>h3{
+  font-size: 1vw;
+}
+
+/* === article text slut === */
