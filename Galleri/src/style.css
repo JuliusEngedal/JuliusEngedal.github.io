@@ -20,14 +20,14 @@
 }
 
 .burger-menu{
-width: 3vw;
-height: 6vh;
-cursor: pointer;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-top:1.5vh;
-margin-left: 70vw;
+  width: 3vw;
+  height: 6vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top:1.5vh;
+  margin-left: 70vw;
 }
 
 .bar{
@@ -38,7 +38,7 @@ margin-left: 70vw;
 }
 
 .change {
-  display: block;
+  
 }
 
 .change .bar {
@@ -46,7 +46,7 @@ margin-left: 70vw;
 }
 
 .change #bar1 {
-  transform: translateY(7px) rotateZ(-45deg);
+  transform: translateY(33px) rotateZ(-45deg);
 }
 
 .change #bar2 {
@@ -54,7 +54,7 @@ margin-left: 70vw;
 }
 
 .change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
+  transform: translateY(-15px) rotateZ(45deg);
 }
 
 .change-bg {
@@ -92,6 +92,17 @@ margin-left: 70vw;
   }
   
 } 
+
+
+@media screen and (max-width:320px) {
+
+  .burger-menu{
+    margin-left: 15vw;
+    width: 10vw;
+  }
+  
+} 
+
 
 /* === Nav slut === */
 
@@ -144,3 +155,18 @@ footer{
 }
 
 /* === article text slut === */
+
+/* === Image grid start === */
+
+.img-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmmax(300px 1fr));
+
+}
+
+.img-grid>img{
+  width: 100%;
+}
+
+/* === Image grid slut === */
