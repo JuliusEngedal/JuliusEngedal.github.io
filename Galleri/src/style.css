@@ -140,21 +140,6 @@ footer{
 
 /* === header section slut === */
 
-/* === article text === */
-
-.article-text{
-  text-align: center;
-}
-
-.article-text>h1{
-  font-size: 2.5vw;
-}
-
-.article-text>h3{
-  font-size: 1vw;
-}
-
-/* === article text slut === */
 
 /* === Image grid start === */
 
@@ -172,6 +157,18 @@ footer{
   width: 100%;
   filter: blur(2px);
   border: 5px solid darkblue;
+  transition: 1s;
+}
+
+/* .g-img:hover{
+  width: 110%;
+  transform: 1s;
+  position: relative;
+}
+ */
+
+.årstal{
+  transition: 1s;
 }
 
 .årstal > h1{
@@ -180,6 +177,12 @@ footer{
   margin-top: -12.5vw;
   text-align: center;
 }
+
+.årstal:hover{
+  width: 110%;
+
+}
+
 
 
 /* === Image grid slut === */
