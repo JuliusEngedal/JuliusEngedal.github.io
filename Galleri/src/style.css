@@ -160,7 +160,8 @@ footer{
   transition: 1s;
 }
 
-/* .g-img:hover{
+/* 
+.g-img:hover{
   width: 110%;
   transform: 1s;
   position: relative;
@@ -168,6 +169,7 @@ footer{
  */
 
 .årstal{
+  width: 100%;
   transition: 1s;
 }
 
@@ -178,12 +180,30 @@ footer{
   text-align: center;
 }
 
+
 .årstal:hover{
   width: 110%;
+  transform: 1s;
 
 }
 
+.å-btn{
+  position: relative;
+  text-align: center;
+  align-content: center;
+  display: none;
 
+}
+
+.årstal:hover .å-btn{
+  display: block;
+  margin: auto;
+  background-color: lightblue;
+  font-size: 2rem;
+  border: solid 2px black;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
 
 /* === Image grid slut === */
 
