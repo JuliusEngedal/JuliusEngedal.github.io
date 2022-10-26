@@ -1,0 +1,10 @@
+
+* skal vi lave individuelle index til hvert årstal 
+
+* Hovrdan skal vi lave mappe opdeling
+
+* Flere stylesheets og js source eller kun 1 master stylesheet
+
+* Billeder pre blur eller gjort igennem css? 
+
+* Burger Menu punkter??? Hvad skal jeg linke til ?? 
