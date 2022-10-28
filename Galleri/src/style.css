@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* === Nav start === */
@@ -12,7 +12,7 @@
   background-color: lightcoral;
 }
 
-.mc-logo > img{
+.mc-logo > img {
   height: 80%;
   display: flex;
   justify-content: center;
@@ -20,18 +20,18 @@
   padding-top: 2%;
 }
 
-.burger-menu{
+.burger-menu {
   width: 3vw;
   height: 6vh;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin-top:1.5vh;
+  margin-top: 1.5vh;
   margin-left: 70vw;
 }
 
-.bar{
+.bar {
   height: 0.8vh;
   background-color: black;
   border-radius: 5px;
@@ -39,7 +39,6 @@
 }
 
 .change {
-  
 }
 
 .change .bar {
@@ -59,73 +58,58 @@
 }
 
 .change-bg {
+}
 
-} 
-
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
- @media screen and (max-width:768px) {
-
-  .burger-menu{
+@media screen and (max-width: 768px) {
+  .burger-menu {
     display: flex;
     margin-left: 60vw;
     width: 5vw;
   }
 
-  .bar{
+  .bar {
     margin-top: 5px;
-    
   }
-  
 }
 
-
-@media screen and (max-width:425px) {
-
-  .burger-menu{
-    margin-left: 35vw;
+@media screen and (max-width: 425px) {
+  .burger-menu {
+    margin-left: 50vw;
     width: 8vw;
   }
-  
-} 
+}
 
-
-@media screen and (max-width:320px) {
-
-  .burger-menu{
-    margin-left: 15vw;
+@media screen and (max-width: 320px) {
+  .burger-menu {
+    margin-left: 35vw;
     width: 10vw;
   }
-  
-} 
-
+}
 
 /* === Nav slut === */
 
 /* = header section =  */
 
-.sticky + .header-section{
-  padding-top: 60px;
+.sticky + .header-section {
+  padding-top: 9vh;
 }
 
-
-.header-section >img{
+.header-section > img {
   width: 100%;
 }
 
-
-
-.header-section{
+.header-section {
   display: flex;
-
 }
 
-.header-overskrift{
+.header-overskrift {
   margin: auto;
   color: white;
   margin-left: -90%;
@@ -133,24 +117,22 @@
   line-height: 5vw;
 }
 
-.header-overskrift>h5{
+.header-overskrift > h5 {
   font-size: 1vw;
   margin-bottom: -2vw;
   margin-left: 0.2vw;
 }
 
-
-footer{
+footer {
   height: 20vh;
   background-color: darkslategray;
 }
 
 /* === header section slut === */
 
-
 /* === Image grid start === */
 
-.img-grid{
+.img-grid {
   background-color: rgb(139, 100, 106);
   padding: 2vw;
   display: grid;
@@ -160,15 +142,12 @@ footer{
   grid-row-gap: 10vw;
 }
 
-.g-img{
+.g-img {
   width: 100%;
   transition: 1s;
-  
-    
-  
 }
 
-.blur{
+.blur {
   filter: blur(5px);
   transition: 1s;
 }
@@ -181,13 +160,12 @@ footer{
 }
  */
 
-.årstal{
+.årstal {
   width: 100%;
-  height: 100%;
   transition: 1s;
 }
 
-.årstal > h1{
+.årstal > h1 {
   position: relative;
   font-size: 4vw;
   margin-top: -12.5vw;
@@ -195,22 +173,20 @@ footer{
   color: lightpink;
 }
 
-
-.årstal:hover{
+.årstal:hover {
   width: 110%;
   transform: 1s;
 }
 
-.å-btn{
+.å-btn {
   position: relative;
   text-align: center;
   align-content: center;
   display: none;
   padding: 5px;
-
 }
 
-.årstal:hover .å-btn{
+.årstal:hover .å-btn {
   display: block;
   margin: auto;
   background-color: lightblue;
@@ -220,16 +196,15 @@ footer{
   cursor: pointer;
 }
 
-.årstal:hover .blur{
+.årstal:hover .blur {
   filter: blur(0px);
   transition: 1s;
 }
 
-.årstal:hover > h1{
- 
+.årstal:hover > h1 {
+
 }
 
 /* === Image grid slut === */
 
 /* ===== MEDIA QUERIES =====  */
-
