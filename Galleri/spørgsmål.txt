@@ -4,7 +4,11 @@
 * Hovrdan skal vi lave mappe opdeling
 
 * Flere stylesheets og js source eller kun 1 master stylesheet
+    1 master plus indi
+
 
 * Billeder pre blur eller gjort igennem css? 
 
-* Burger Menu punkter??? Hvad skal jeg linke til ?? 
+* Burger Menu punkter??? Hvad skal jeg linke til ?? '
+ - om os 
+ - kontakt 

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* === Nav start === */
@@ -127,10 +128,16 @@
 .header-overskrift{
   margin: auto;
   color: white;
-  margin-left: -65%;
-  font-size: 4vw;
+  margin-left: -90%;
+  font-size: 3vw;
+  line-height: 5vw;
 }
 
+.header-overskrift>h5{
+  font-size: 1vw;
+  margin-bottom: -2vw;
+  margin-left: 0.2vw;
+}
 
 
 footer{
@@ -144,7 +151,7 @@ footer{
 /* === Image grid start === */
 
 .img-grid{
-  background-color: grey;
+  background-color: rgb(139, 100, 106);
   padding: 2vw;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -155,8 +162,14 @@ footer{
 
 .g-img{
   width: 100%;
-  filter: blur(2px);
-  border: 5px solid darkblue;
+  transition: 1s;
+  
+    
+  
+}
+
+.blur{
+  filter: blur(5px);
   transition: 1s;
 }
 
@@ -170,6 +183,7 @@ footer{
 
 .årstal{
   width: 100%;
+  height: 100%;
   transition: 1s;
 }
 
@@ -178,13 +192,13 @@ footer{
   font-size: 4vw;
   margin-top: -12.5vw;
   text-align: center;
+  color: lightpink;
 }
 
 
 .årstal:hover{
   width: 110%;
   transform: 1s;
-
 }
 
 .å-btn{
@@ -192,6 +206,7 @@ footer{
   text-align: center;
   align-content: center;
   display: none;
+  padding: 5px;
 
 }
 
@@ -199,10 +214,19 @@ footer{
   display: block;
   margin: auto;
   background-color: lightblue;
-  font-size: 2rem;
-  border: solid 2px black;
+  font-size: 2vw;
+  border: solid 1px black;
   border-radius: 0.7rem;
   cursor: pointer;
+}
+
+.årstal:hover .blur{
+  filter: blur(0px);
+  transition: 1s;
+}
+
+.årstal:hover > h1{
+ 
 }
 
 /* === Image grid slut === */
