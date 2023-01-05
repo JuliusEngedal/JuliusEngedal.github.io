@@ -55,7 +55,9 @@
 
 .section {
   background-color: black;
-  width: 100%;
+  background-image: url(/images/pexels-olia-danilevich-4974915.jpg);
+  width: 100%;  
+  height: 1080px;
   position: relative;
 }
 
