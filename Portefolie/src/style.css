@@ -55,9 +55,8 @@
 
 .section {
   background-color: black;
-  background-image: url(/images/Olia-Top-section.jpg);
   width: 100%;
-  height: 1080px;
+  height: 100%;
   position: relative;
 }
 
