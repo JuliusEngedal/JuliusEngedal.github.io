@@ -7,10 +7,58 @@
   .Fokus-container{
     background-color: rgb(139, 100, 106);
     display: flex;
+    padding: 2%;
   }
 
   .Fokus-img{
     width: 40vw;
     height: 40vw;
-    padding: 2%;
+  }
+
+  .Fokus-text{
+    font-size: 1vw;
+    margin-left: 2%;
+    margin-right: 6%;
+  }
+
+  .Fokus-text>h1{
+    font-size: 4vw;    
+  }
+
+  .Fokus-text>h2{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+  }
+
+  .Fokus-text>p{
+    font-size: 1.5vw;
+  }
+
+  
+
+  @media screen and (max-width: 425px) {
+    .Fokus-container{
+        flex-direction: column;
+    }
+
+    .Fokus-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Fokus-text{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 4vw;
+    }
+
+    .Fokus-text>h1{
+        font-size: 12vw;
+    }
+    
+    .Fokus-text>h2{
+        font-size: 6vw;
+    }
+
+   
   }
