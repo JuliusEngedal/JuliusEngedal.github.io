@@ -4,12 +4,40 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+
+  background: linear-gradient(-45deg, #440d12, #440d12, #a7273c, #951d29);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+
+h1 {
+  font-size: 3vw;
+}
+
 /* === Navbar Start === */
 
 #navbar {
   display: flex;
   overflow: hidden;
-
   background-color: white;
   color: black;
 }
@@ -53,35 +81,92 @@
 
 /* === Navbar slut === */
 
-.section {
+.hero-section {
   background-color: black;
-  
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 100vh;
   position: relative;
 }
 
-.section > img{
-    width: 100%;
-    margin-bottom: -6px;
+.hero-section > img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: -6px;
 }
 
-.first-s-text{
-    position: absolute;
-    top: 45%;
-    right: 70%;
-    color: white;
+.first-s-text {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  color: rgba(190, 45, 69, 0.856);
+  text-shadow: 10px 10px 10px #000;
 }
 
-.first-article{
-    height: 60vh;
-    background: white;
+.first-s-text > h1 {
+  font-size: 4.2vw;
+  -webkit-text-stroke: rgba(255, 255, 255, 0.974);
+  -webkit-text-stroke-width: 0.5px;
 }
 
-.top-article-text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 100px;
-    line-height: 50px;
+.first-s-text > h2 {
+  font-size: 1.4vw;
+  text-shadow: 0.4px 0.8px 2px white;
+}
+
+.First-container {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  background-color: darkred;
+
+}
+
+.text-container {
+  width: 30%;
+  height: 50%;
+  background-color: red;
+  top: 15%;
+  left: 5%;
+  border-radius: 2vw;
+}
+
+.ftc-1 {
+  padding: 1vw;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.first-article {
+  height: 60vh;
+  background: white;
+}
+
+.top-article-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  line-height: 50px;
+}
+
+.first-icons {
+  align-content: center;
+}
+
+.fa {
+  align-content: center;
+  font-size: 8vw;
+  margin: 8vw;
+  margin-top: 3vw;
+  margin-bottom: 20px;
 }
