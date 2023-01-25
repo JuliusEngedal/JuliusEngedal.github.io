@@ -6,26 +6,8 @@
 
 body {
   overflow-x: hidden;
-
   background-color: #440d12;
-  
 }
-
-
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-
-
 
 h1 {
   font-size: 3vw;
@@ -82,16 +64,9 @@ h1 {
 
 .hero-section {
   background-color: black;
-  width: auto;
-  height: 100vh;
-  position: relative;
-}
 
-.hero-section > img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: -6px;
+
+  
 }
 
 .first-s-text {
@@ -140,7 +115,7 @@ h1 {
 }
 
 .first-o>h1{
-  font-size: 4.5vw;
+  font-size: 5vw;
 }
 
 .shadow{
@@ -154,9 +129,9 @@ h1 {
 }
 
 .uo-text{
-  width: 50%;
+  width: 60%;
   text-align: left;
-  margin-left: 25%;
+  margin-left: 20%;
   font-size: 1vw;
   
   
