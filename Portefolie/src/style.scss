@@ -6,8 +6,11 @@
 
 body {
   overflow-x: hidden;
-  background-color: #440d12;
+
+  background-color:  #7d1722;
 }
+
+
 
 h1 {
   font-size: 3vw;
@@ -63,10 +66,17 @@ h1 {
 /* === Navbar slut === */
 
 .hero-section {
-  background-color: black;
+  background-color: black;  /* <----- */
+  width: auto;
+  height: 100vh;
+  position: relative;
+}
 
-
-  
+.hero-section > img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: -6px;
 }
 
 .first-s-text {
@@ -93,9 +103,7 @@ h1 {
   height: 80vh;
   margin: auto;
   background-color: ;
-  background: linear-gradient( #00000094 0%, #440d12 100%) no-repeat;
-  background-size: auto 10vh;
-  background-position: top;
+
 }
 
 .text-container {
@@ -129,10 +137,10 @@ h1 {
 }
 
 .uo-text{
-  width: 60%;
+  width: 50%;
   text-align: left;
   margin-left: 20%;
-  font-size: 1vw;
+  font-size: 1.2vw;
   
   
 }
@@ -150,7 +158,7 @@ h1 {
 
 .first-article {
   height: 60vh;
-  background: white;
+ 
 }
 
 .top-article-text {
