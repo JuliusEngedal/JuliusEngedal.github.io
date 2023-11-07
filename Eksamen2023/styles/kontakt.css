@@ -1,0 +1,160 @@
+
+.kontakt-container{
+    background:#34626C ;
+    border-top-left-radius: 70px;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius:  20px;
+  
+  border: 1px solid white;
+  background-color: #34626C;
+  color: white;
+}
+
+
+
+.kontakt-form-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 88px;
+ 
+}
+
+
+
+.kontakt-form>h5{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.message-box{
+  height: 180px;
+  margin-bottom: 40px;
+}
+
+
+
+#kontakt-form>button{
+  width: 70%;
+  height: 88px;
+  border-radius: 70px 0 70px 0;
+  background-color: #839B97;
+  color: white;
+  border: none;
+  margin: 20px 15% 100px 15%;
+  padding: 27px 25px 27px 25px;
+  box-shadow: 0px 4px #00000029 ;
+}
+
+#kontakt-form>button:hover{
+  background-color: #34626C;
+}
+
+
+.subscribe-result{
+  background-color: #34626C;
+  display: flex;
+  text-align: center;
+  padding-top: 40%;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.subscribe-result-button{
+    background-color: #839B97;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: 100px 20% 100px 20%;
+    border-radius: 70px 0 70px 0;
+}
+
+.subscribe-result>a{
+    text-decoration: none;
+}
+
+
+
+@media only screen and (min-width:728px) {
+
+    .kontakt-form-container{
+        width: 500px;
+        margin-top: 150px;
+    }
+
+
+
+
+
+    #kontakt-form>label>input{
+        height: 50px;
+    }
+
+
+
+    .subscribe-result{
+        padding-top: 20%;
+    }
+
+    .subscribe-result-button{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width:1024px) {
+    
+    .subscribe-result-button{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .subscribe-result-button>h4{
+        font-size: 50px;
+    }
+
+    .subscribe-result>h4{
+        font-size: 50px;
+    }
+
+ 
+}
+
+
+@media only screen and (min-width:1440px) {
+    
+    .subscribe-result{
+        padding-top: 10%;
+    }
+
+
+ 
+}

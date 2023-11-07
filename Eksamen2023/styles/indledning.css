@@ -1,0 +1,60 @@
+
+
+
+
+
+
+.indledning{
+    background-color: #34626C;
+    color: white;
+    height: 505px;
+    border-radius: 70px 0px 70px 0px;
+    margin-top: -83px;
+    margin-bottom: -83px;
+    position: relative;
+}
+
+.indledning>h2{
+    padding: 83px 50px 43px 54px;
+    text-align: center;
+}
+
+.indledning>p{
+    padding: 0px 24px 0px 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+@media only screen and (min-width:768px){
+
+    .indledning{
+        height: 400px;
+    }
+    
+    .indledning>h2{
+        padding: 50px 50px 43px 54px;
+        text-align: center;
+    }
+
+    .indledning>p{
+        padding: 0 20% 0 20%;
+        
+    }
+
+
+}
+
+
+@media only screen and (min-width:1440px){
+    .indledning>p{
+        padding: 0 20% 0 20%;
+        font-size: 20px;
+    }
+}
+
+
+.kontakt-indledning{
+    border-radius: 70px 0 0 0 ;
+}

@@ -1,0 +1,226 @@
+
+/* === HEADER/HERO FORSIDE === */
+
+.header-forside{
+    height: 820px;
+    background-image: url("/assets/image_00.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+
+}
+
+.header-forside:before{
+    content: "";
+    position: absolute;
+    height: 820px;
+    width: 100%;
+    background-color: #34626C80;
+}
+
+.header-forside>.navigation>nav>img{
+    opacity: 0;
+    
+}
+
+
+.hero-forside>li{
+    position: absolute;
+    list-style: none;   
+    text-align: center;
+    width: 100%;
+    margin-top: 147px;
+}
+
+.hero-forside>li>img{
+    width: 88px;
+    margin-bottom: 20px;
+}
+
+.hero-forside>li>a>button{
+    margin-top: 25px;
+    background-color: #ffffff00;
+    width: 245px;
+    height: 104px;
+    color: white;
+    border: white 1px solid;
+    border-radius: 50px 0px 50px 0px;
+    cursor: pointer;
+    transition: .1s;
+    
+}
+
+.hero-forside>li>a>button:hover{
+    background-color: #34626C;
+    transition: .1s;
+}
+
+
+
+
+/* ==== Header ophold ==== */
+
+
+.header-ophold{
+    height: 455px;
+    width: 100%;
+    background-image: url("/assets/image_01.jpg");
+    background-repeat: no-repeat;
+    background-size:  790px;
+    background-position: right;
+    
+}
+
+.header-ophold::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 455px;
+    width: 100%;
+    background-color: #34626C80;
+}
+
+.ophold-hero{
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 130px;
+}
+
+@media only screen and (min-width:1024px){
+    .header-ophold{
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
+/* ==== Header aktiviteter ==== */
+
+
+
+.header-aktiviteter{
+    height: 455px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image:  url("/assets/image_04.jpg");
+
+
+    background-size: 1300px; 
+    background-position: -710px;
+    
+}
+
+@media only screen and (min-width:588px){
+    .header-aktiviteter{
+        background-size: 1500px;
+        background-position: right;
+    }
+    
+}
+
+@media only screen and (min-width:768px){
+    .header-aktiviteter{
+        background-size: 1800px;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .header-aktiviteter{
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.aktiviteter-hero>h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 100px;
+    
+}
+
+
+.header-aktiviteter:before{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 455px;
+    width: 100%;
+    background-color: #34626C80;
+   
+}
+
+
+
+
+
+
+.hero-kontakt{
+    background-image: url(/assets/image_03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 455px;
+    margin-top: -63px;
+    text-align: center;
+}
+
+.hero-kontakt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 455px;
+    width: 100%;
+    background-color: #34626C80;
+}
+
+.hero-kontakt>h1{
+    position: relative;
+    padding-top: 40%;
+}
+
+
+@media only screen and (min-width: 728px){
+
+    .hero-kontakt>h1{
+        padding-top: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .hero-kontakt>h1{
+        padding-top: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+
+    .hero-kontakt>h1{
+        padding-top: 10%;
+    }
+
+    .ophold-hero{
+        margin-top: 90px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px){
+
+    .hero-kontakt>h1{
+        padding-top: 7%;
+    }
+
+  
+}

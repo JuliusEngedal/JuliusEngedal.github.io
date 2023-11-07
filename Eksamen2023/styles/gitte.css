@@ -1,0 +1,79 @@
+.gitte-container{
+    height: 955px;
+    width: 100%;
+    background-color: #34626C;
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    border-radius: 66px 0px 66px 0px;
+}
+
+.gitte-list{
+    color: white;
+    list-style: none;
+}
+
+.gitte-list>h2{
+   text-align: center;
+   padding: 69px 32px 36px 32px;
+}
+
+.gitte-list>p{
+    text-align: center;
+    padding: 0px 24px 0px 24px;
+    font-size: 14px;
+    
+}
+
+.gitte-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.gitte-img{
+    object-fit: cover;
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+}
+
+
+.gitte-btn-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ophold-btn{
+    margin: 65px 65px 0px 65px;
+    background-color: #839B97;
+    width: 245px;
+    height: 104px;
+    color: white;
+    border: 1px;
+    border-radius: 50px 0px 50px 0px;
+    transition: .1s;
+    cursor: pointer;
+    box-shadow: 0px 4px #00000029 ;
+}
+
+.ophold-btn:hover{
+    background-color: #2A4F57;
+    transition: .1s;
+}
+
+
+@media only screen and (min-width:728px){
+    .gitte-container{
+        height: 730px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .gitte-list>p{
+        font-size: 20px;
+        padding: 0 10% 0 10%;
+    }
+}

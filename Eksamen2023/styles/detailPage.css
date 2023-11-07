@@ -1,0 +1,224 @@
+
+.detail-container{
+    
+}
+
+.detail-headder{
+    height: 455px;
+    background-repeat: no-repeat;
+    background-position: -300px;
+    background-size:  800px ;
+    margin-top: -63px;
+}
+
+
+.detail-headder::before{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 455px;
+    width: 100%;
+    background-color: #34626C80;
+    z-index: 0;
+}
+
+.detail-overskrift{
+    margin-top: -65%;
+    text-align: center;
+}
+
+
+.detail-content-container{
+    background-color:#34626C ;
+    margin-top: -70px;
+    border-top-left-radius: 70px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.detail-content-container>a{
+    text-decoration: none;
+}
+
+.detail-content-container>h2{
+    padding-top: 20%;
+}
+
+
+.detail-content-container>h4{
+    margin-top: 18%;
+}
+
+.detail-description{
+    margin: 10% 5% 10% 5%;
+}
+
+
+.detail-content-container>p{
+    margin-top: 5%;
+}
+
+.detail-list{
+    color: white;    
+}
+
+.detail-bookButton{
+    background-color: #839B97;
+    width: 50%;
+    height: 20vw;
+    border-radius: 70px 0 70px 0;
+    margin:auto;    
+    margin-top: 10%;
+    transition: 0.1s;
+}
+
+.detail-bookButton:hover{
+    background: #2A4F57;
+    transition: 0.1s;
+}
+
+.detail-bookButton>h4{
+   padding-top: 12%;
+}
+
+@media only screen and (min-width:495px){
+    .detail-headder{
+        background-size:  1200px ;
+    }
+
+    .detail-content-container>h2{
+        padding-top: 12%;
+    }
+
+    .detail-overskrift{
+        margin-top: -50%;
+    }
+}
+
+
+@media only screen and (min-width:728px){
+
+    .detail-headder{
+        background-size:  1200px ;
+    }
+
+    .detail-description{
+        margin: 5% 5% 5% 5%;
+    }
+
+    .detail-content-container>h4{
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    .detail-content-container>h2{
+        padding-top:8%;
+    }
+
+    .detail-overskrift{
+        margin-top: -40%;
+    }
+
+    .detail-bookButton{
+        margin-top: 5%;
+    }
+
+    .detail-bookButton>h4{
+        font-size: 60px;
+    }
+
+    
+
+}
+
+
+@media only screen and (min-width:1024px){
+    .detail-headder{
+        background-position: center;
+    }
+
+    .detail-description{
+        margin: 5% 5% 5% 5%;
+    }
+
+    .detail-content-container>h4{
+        margin-top: 1%;
+    }
+
+    .detail-content-container>h2{
+        padding-top:5%;
+    }
+
+    .detail-overskrift{
+        margin-top: -30%;
+    }
+
+    .detail-bookButton{
+        margin-top: 5%;
+    }
+    
+    .detail-bookButton>h4{
+        font-size: 60px;
+        padding-top: 14%;
+    }
+
+}
+
+@media only screen and (min-width:1440px){
+
+    .detail-headder{
+         background-size: cover;
+    }
+
+    .detail-description{
+        margin: 1% 10% 0 10%;
+    }
+
+    .detail-description>p{
+        font-size: 20px;
+    }
+
+
+    .detail-content-container>p{
+        margin-top: 3%;
+        font-size: 20px;
+    }
+
+    .detail-content-container>h4{
+        font-size: 60px;
+        margin-top: 5%;
+    }
+    .detail-list{
+        font-size: 20px;
+    }
+
+    .detail-overskrift{
+        margin-top: -20%;
+    }
+
+
+    .detail-bookButton{
+        margin-top: 2%;
+        width: 30%;
+        height: 30%;
+    }
+
+    .detail-bookButton>h4{
+        font-size: 60px;
+        margin-top: 2%;
+        padding:5%;
+    }
+
+}
+
+@media only screen and (min-width:1920px){
+    .detail-overskrift{
+        margin-top: -16%;
+    }
+
+    .detail-description{
+        margin: 3% 18% 5% 18%;
+    }
+
+}   

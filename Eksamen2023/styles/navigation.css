@@ -1,0 +1,151 @@
+
+
+.navigation.none>.topnav>a>img{
+    display: none;
+}
+
+.topnav {
+    position: relative;
+    height: 63px;
+    
+}
+
+.topnav.nav-farve{
+    background-color: #849B97;
+}
+
+.logo.none{
+    display: none; 
+}
+
+.logo{
+    width: 45px;
+    margin-left: 15px;
+    margin-top: 12px;
+    position: fixed;
+    z-index: 10;
+}
+  
+
+.myLinks {
+    display: none;
+    color: white;
+    opacity: 0;
+    
+}
+
+.myLinks.active {
+  z-index: 10;
+  height: 340px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  opacity: 1;
+  background-color: #849B97;
+}
+
+.myLinks.active>ul>li>a{
+    list-style: none;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-color: #849B97;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.myLinks.active>ul>li{
+    list-style: none;
+    background-color: #849B97;
+}
+
+.myLinks.active>ul{
+    margin-top: 20px;
+}
+
+.topnav>a{
+    width: 45px;
+    text-decoration: none;
+    margin-top: 15px;
+    height: 42px;
+    
+}
+  
+.icon {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    top: 0;
+    margin-top: 0px;
+    background-color: #849B97;
+    border-radius: 14px 0px 14px 0px;
+}
+
+.burger-box{
+    margin: 13px;
+    background-color: #849B97;
+}
+
+.icon>.burger-box>span{
+    background-color: white;
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: 0.2s;
+    width: 20px;
+    
+}
+
+.bl-1{
+    margin-left: 50px;
+}
+
+#burger.b-active>.burger-box>.bl-1{
+    display: none; 
+    transform: rotate(45deg);
+}
+
+#burger.b-active>.burger-box>.bl-2{
+    transform: rotate(45deg) translateY(5px);
+}
+
+#burger.b-active>.burger-box>.bl-3{
+    transform: rotate(-45deg) translateY(-5px);
+}
+  
+
+@media only screen and (min-width:1440px) {
+
+
+/*   .topnav{
+    display: flex;
+  }
+  .myLinks{
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    
+  }
+
+  .myLinks>a{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white ;
+    text-decoration: none
+  }
+
+  #burger{
+    display: none;
+  }
+
+  .logo{
+    width: 130px;
+  } */
+
+}

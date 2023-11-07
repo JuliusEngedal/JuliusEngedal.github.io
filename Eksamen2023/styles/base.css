@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    font-size: 80px;
+    font-weight: 200;
+    font-family: 'Zen Loop', cursive ;
+    color: white;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Zen Loop', cursive ;
+    color: white;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Zen Loop', cursive ;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Zen Loop', cursive ;
+    color: white;
+}
+
+h5{
+    font-size: 20px;
+    font-family: 'Zen Loop', cursive ;
+    font-weight: 200;
+    color: white;
+}
+
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+}
+
+
+
+.Zen{
+    font-family: 'Zen Loop', cursive ;
+    
+}
+
+
+.Nanum{
+    font-family: 'Nanum Gothic', sans-serif;
+}

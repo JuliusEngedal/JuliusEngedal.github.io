@@ -1,0 +1,194 @@
+.aktiviteter-accordian .aktivitet-accordian-content {
+    display : none;
+  }
+  
+  
+.aktiviteter-accordian.active .aktivitet-accordian-content {
+    display : block;
+    
+  }
+  
+
+
+
+  
+.aktiviteter-container{
+    background-color: #CFD3CE;
+    padding-top: 250px;
+}
+
+
+
+
+.aktiviteter-accordian{
+    width: auto;
+    height: 204px;
+    background-size: cover;
+    color: white;
+    margin-bottom: 400px;
+}
+
+.aktiviteter-accordian::before{
+    content: "";
+    position: absolute;
+   
+    height: 204px;
+    width: 100%;
+    background-color: #34626C80;
+}
+
+
+
+  
+.aktivitet-overskrift{
+   
+    width: 90%;
+    height: 120px;
+    text-align: center;
+    border-radius: 70px 0px 70px 0px;
+    background-color: #C6B498;
+    position: absolute;
+    margin: -80px 5% 0 5%;
+    
+    
+    
+}
+  
+.aktivitet-overskrift>h2{
+
+    
+    margin-top: 8%;
+}
+  
+  
+.aktivitet-content-container{
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    border-radius: 70px 0px 70px 0px;
+    margin: 170px 5% 0 5%;
+    background-color:#34626C;
+}
+
+.aktivitet-content-container>h4{
+    margin: 34px 0px 0px 54px;
+}
+
+
+
+
+.aktivitet-span-container>span{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    
+    
+}
+
+.aktivitet-span-container{
+    width: 80%;
+    height: 48px;
+    margin: 15px 0 0 30px;
+    border-radius: 70px 0px 70px 0px;
+    border: 1px solid white;
+}
+
+
+.aktivitet-accordian-content{
+    background-color: #34626C;
+    position: relative;
+    padding: 31px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom-right-radius: 70px;
+    
+}
+
+
+
+
+
+.aktiviteter-accordian.active{
+    margin-bottom: 500px;
+}
+
+.aktiviteter-accordian.active .aktivitet-content-container{
+    border-radius: 70px 0px 0px 0px;
+    
+}
+
+
+.aktiviteter-accordian.active .aktivitet-content-container .more{
+   display: none;
+}
+
+.aktiviteter-accordian .aktivitet-content-container .less{
+   display: none;
+}
+
+.aktiviteter-accordian.active .aktivitet-content-container .less{
+    display: flex;
+}
+
+
+
+
+@media only screen and (min-width:728px){
+
+    .aktiviteter-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .aktivitet-overskrift{
+        width: 45%;
+    }
+    .aktiviteter-accordian{
+        display: flex;
+        justify-content: center;
+        width: 48%;
+        margin: 1%;
+        margin-bottom: 400px;
+    }
+
+
+
+    .aktivitet-content-container{
+        width: 45% ;
+    }
+
+    .aktiviteter-accordian::before{
+
+        width: 48%;
+
+    }
+    
+}
+
+@media only screen and (min-width:1440px){
+
+
+    .aktiviteter-accordian{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aktivitet-overskrift>h2{
+        margin-top: 5%;
+    }
+
+    .aktivitet-span-container{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width:1920px) {
+
+    .aktivitet-overskrift>h2{
+        margin-top: 4%;
+    }
+
+}

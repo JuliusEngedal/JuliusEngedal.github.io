@@ -1,0 +1,53 @@
+
+
+
+
+
+.udtalelser-overskrift-container{
+    width: 100%;
+    height: 175px;
+    margin: 0px 18px 0px 18px;
+    margin-top: 190px;
+    background-color: #C6B497;
+    color: white;
+    border-radius: 66px 0px 66px 0px;
+    text-align: center;
+}
+
+.udtalelser-overskrift-container>h2{
+    margin: 20px 0px 20px 0px;
+}
+
+
+
+.udtalelser-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+    background-color: #CFD3CE;
+}
+
+
+.udtalelse-container{
+    width: 340px;
+    margin: 84px 18px 0px 18px;
+    background-color: #839B97;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border-radius: 66px 0px 66px 0px;
+    box-shadow: 0px 4px #00000029 ;
+}
+
+
+.udtalelse-overskrift{
+    margin: 27px;
+    margin-bottom: 16px;
+}
+
+.udtalelse-content{
+    margin: 0px 27px 52px  27px;
+
+    
+}

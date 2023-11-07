@@ -1,0 +1,148 @@
+
+
+
+
+  
+.ophold-container{
+    background-color: #CFD3CE;
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+
+
+
+
+.stays-container{
+    width: auto;
+    height: 304px;
+    background-size: cover;
+    color: white;
+    margin-bottom: 200px;
+}
+
+.stays-container:before{
+    content: "";
+    position: absolute;
+   
+    height: 304px;
+    width: 100%;
+    background-color: #34626C80;
+}
+
+
+
+  
+.stays-overskrift{
+   
+    width: 90%;
+    height: 174px;
+    text-align: center;
+    border-radius: 70px 0px 70px 0px;
+    background-color: #C6B498;
+    position: absolute;
+    margin: -80px 5% 0 5%;
+    
+    
+    
+}
+  
+.stays-overskrift>h2{
+
+    
+    margin-top: 5%;
+}
+  
+  
+.stays-læsmere-container{
+    position: absolute;
+    width: 60%;
+    height: 88px;
+    cursor: pointer;
+    border-radius: 70px 0px 70px 0px;
+    margin: 270px 20% 0 20%;
+    background-color:#839B97;
+    box-shadow: 0px 4px #00000029 ;
+}
+
+.stays-læsmere-container>h4{
+    margin-top: 12%;
+    text-align: center;
+}
+
+.stays-læsmere-container>h4>a{
+   text-decoration: none;
+   color: white;
+}
+
+
+
+
+
+@media only screen and (min-width:728px){
+
+    .ophold-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .stays-overskrift{
+        width: 45%;
+    }
+
+    
+    .stays-container{
+        display: flex;
+        justify-content: center;
+        width: 48%;
+        margin: 1%;
+        margin-bottom: 150px;
+    }
+
+
+
+    .stays-læsmere-container{
+        width: 45% ;
+    }
+
+    .stays-læsmere-container>h4{
+        margin-top: 8%;
+    }
+
+    .stays-container::before{
+
+        width: 48%;
+
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+
+  .stays-læsmere-container>h4{
+    margin-top: 6%;
+  }
+
+}
+
+@media only screen and (min-width:1440px){
+
+    .stays-container{
+        width: 30%;
+    }
+
+    .stays-container::before{
+        width: 30%;
+    }
+
+    .stays-læsmere-container{
+        width: 25%;
+    }
+
+    .stays-overskrift{
+        width: 25%;
+    }
+
+    
+}
