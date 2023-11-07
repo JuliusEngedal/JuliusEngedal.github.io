@@ -5,27 +5,27 @@ const navigation = {
 
     navData : [
         {
-            page: '/pages/Kontakt.html',
+            page: '../pages/Kontakt.html',
             title: 'Kontakt'
         },
         {
-            page: '/pages/Aktiviteter.html',
+            page: '../pages/Aktiviteter.html',
             title: 'Aktiviteter'
         }, 
         {
-            page: '/pages/Ophold.html',
+            page: '../pages/Ophold.html',
             title: 'Ophold'
         },
         {
-            page: '/pages/detailPage.html?stayId=6533c19ad89bd7c9ba8de72e',
+            page: '../pages/detailPage.html?stayId=6533c19ad89bd7c9ba8de72e',
             title: 'Weekendtur'
         },
         {
-            page: '/pages/detailPage.html?stayId=6533c22ed89bd7c9ba8de735',
+            page: '../pages/detailPage.html?stayId=6533c22ed89bd7c9ba8de735',
             title: 'Romantisk Getaway'
         },
         {
-            page: '/pages/detailPage.html?stayId=6533c25dd89bd7c9ba8de739',
+            page: '../pages/detailPage.html?stayId=6533c25dd89bd7c9ba8de739',
             title: 'Familie Pakken'
         }
     ],
@@ -33,7 +33,7 @@ const navigation = {
    
     template : (navDataList) => 
     `<nav class="topnav">    
-    <a href="../../index.html"><img src="/assets/fav.ico" alt="logo" class="logo" ></a>
+    <a href="../index.html"><img src="../assets/fav.ico" alt="logo" class="logo" ></a>
  
     <div id="myLinks" class="myLinks">
       <ul>

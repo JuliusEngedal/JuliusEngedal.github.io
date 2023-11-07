@@ -5,7 +5,7 @@ import service from "./service/service.js";
 const activities = {
 
     template : (activities) => `
-    <div class="aktiviteter-accordian" style="background-image: url(/assets/activities/${activities._id}.jpg);">
+    <div class="aktiviteter-accordian" style="background-image: url(../assets/activities/${activities._id}.jpg);">
         <div class="aktivitet-overskrift">
             <h2>${activities.title} 
             

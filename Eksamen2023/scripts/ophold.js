@@ -2,7 +2,7 @@ import service from "./service/service.js";
 
 const ophold = {
     template: (stay) => `
-        <div class="stays-container" style="background-image: url(/assets/stays/${stay._id}.jpg);">
+        <div class="stays-container" style="background-image: url(../assets/stays/${stay._id}.jpg);">
             <div class="stays-overskrift">
                 <h2>${stay.title}</h2>
                 <h4>${stay.numberOfPersons} personer</h4>

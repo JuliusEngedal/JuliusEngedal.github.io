@@ -10,7 +10,7 @@ const Footer = {
         <i class="fa-brands fa-square-instagram"></i>
         </div>
         <div class="footer-text">
-        <h2 class="Zen"> <img src="/assets/fav.ico" alt="logo" class="footer-logo"> Gittes Glamping  </h2>
+        <h2 class="Zen"> <img src="../assets/fav.ico" alt="logo" class="footer-logo"> Gittes Glamping  </h2>
         </div>
     
         </div>

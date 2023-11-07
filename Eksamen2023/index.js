@@ -1,4 +1,5 @@
 import navigation from "./scripts/navigation.js";
+import indexNavigation from "./scripts/indexNavigation.js";
 import Footer from "./scripts/footer.js";
 import Udtalelser from "./scripts/kundeudtalelser.js";
 import activities from "./scripts/accordian.js";
@@ -13,4 +14,5 @@ ophold.init();
 activities.init();
 Udtalelser.init();
 navigation.init();
+indexNavigation.init();
 Footer.init();

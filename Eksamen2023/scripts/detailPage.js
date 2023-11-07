@@ -13,7 +13,7 @@ const detailPage = {
     template: (detailedStay) => `
         
     <div class="detail-container" >
-      <div class="detail-headder" style="background-image: url(/assets/stays/${detailedStay._id}.jpg);">
+      <div class="detail-headder" style="background-image: url(../assets/stays/${detailedStay._id}.jpg);">
         <div class="detail-overskrift">
             <h1>${detailedStay.title}</h1>
         </div>
