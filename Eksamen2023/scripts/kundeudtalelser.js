@@ -1,4 +1,4 @@
-import service from "./service/service.js";
+import service from "../scripts/service/service.js";
 
 
 
