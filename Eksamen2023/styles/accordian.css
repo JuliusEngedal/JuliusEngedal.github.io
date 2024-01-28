@@ -1,3 +1,7 @@
+body{
+    background-color: #CFD3CE;
+}
+
 .aktiviteter-accordian .aktivitet-accordian-content {
     display : none;
   }
