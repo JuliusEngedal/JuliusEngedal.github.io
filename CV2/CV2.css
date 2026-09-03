@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lugrasimo&family=Manufacturing+Consent&family=Playball&display=swap');
+
+
+
+h1{
+    font-family: "Edu NSW ACT Cursive", cursive; 
+    font-family: "Lugrasimo", cursive;
+    font-family: "Manufacturing Consent", system-ui;
+    font-family: "Playball", cursive;
+}

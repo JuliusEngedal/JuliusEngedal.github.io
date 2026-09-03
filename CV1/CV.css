@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray
+}
+
+div {
+  max-width: 1140px;
+}
+
+.w-bg{
+  background-color: white;
+}
+
+
+h1 {
+  background-color: white;
+  text-align: center;
+  max-width: 1140px;
+  margin: auto;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: rgb(11, 91, 118);
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.c1 {
+  padding-top: 40px;
+}
+
+.c2 {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+#job {
+  width: 45%;
+  padding-left: 25px;
+}
+
+#udd {
+  width: 45%;
+  padding-right: 25px;
+}
+
+.Udd-card h3 {
+  font-size: 1.8rem;
+  color: rgb(56, 170, 208);
+}
+
+.Udd-card i {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.Job-card {
+}
+
+.Job-card h3 {
+  font-size: 1.8rem;
+  color: rgb(56, 170, 208);
+}
+
+.Job-card p {
+  font-size: 1.3rem;
+}
+
+.Job-card i {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tekst {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil-tekst {
+  padding-left: 25px;
+  width: 45%;
+}
+.erfaring-tekst {
+  padding-right: 25px;
+  width: 45%;
+}
+
+.erfaring-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.erfaring-box {
+  width: 28%;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: lightskyblue;
+}
+
+.erfaring-tekst h2{
+  margin-bottom: 15px;
+}
+
+.erfaring-box h3{
+  background-color: lightskyblue;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.erfaring-box ul {
+  list-style: none;
+  background-color: lightskyblue;
+}
+
+.erfaring-box ul li{
+  background-color: lightskyblue;
+}
+
+@media (max-width: 1000px) {
+  .tekst {
+  }
+
+  .erfaring-box-container {
+    justify-content: space-evenly;
+  }
+
+  .eb3 {
+    margin-top: 20px;
+  }
+
+  .container {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #job {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+
+  #udd {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .tekst {
+    display: inline-block;
+  }
+  .profil-tekst {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+  .erfaring-tekst {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .erfaring-box{
+    padding: 25px;
+  }
+  .Job-card h3 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
