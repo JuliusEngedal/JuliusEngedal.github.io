@@ -1,10 +1,342 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lugrasimo&family=Manufacturing+Consent&family=Playball&display=swap');
 
+* body{
+    background: #56909e;
+}
 
 
-h1{
+/*
     font-family: "Edu NSW ACT Cursive", cursive; 
     font-family: "Lugrasimo", cursive;
     font-family: "Manufacturing Consent", system-ui;
     font-family: "Playball", cursive;
+
+
+h1{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 2px solid currentColor;
+    animation: typing 3s steps(20, end) forwards, 
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: var(--type-width);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}  */
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #63b1c5;
+}
+
+.draw-text-phone{
+    font-family: "Playball", cursive;
+    font-size: 48px;
+    fill: none;
+    stroke:#fff;
+    stroke-width: 0.5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500; 
+    animation: draw 8s ease forwards;
+}
+
+.draw-text{
+    font-family: "Playball", cursive;
+    font-size: 48px;
+    fill: none;
+    stroke:#000;
+    stroke-width: 1;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 8s ease forwards;
+}
+
+@keyframes draw {
+  to {
+
+    stroke-dashoffset: 0;
+  }
+}
+
+.draw2{
+    animation-delay: 0.75s;
+}
+
+.draw3{
+    animation-delay: 1.25s;
+}
+
+
+header{
+    background-image: url('imgs/pexels-deuspix-5484791.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+svg{
+    display: block;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+
+.Min-profil{
+    background-color: #fffbf4;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Min-profil h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.entry.hidden { display: none; }
+
+.dropdown-list {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.dropdown{
+  background-color: #fffbf4;
+  margin: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.dropdown h2{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.dropdown-list{
+    margin: 15px;
+}
+
+.dropdown-list h3{
+    margin-bottom: 6px;
+    font-size: 1.2rem;    
+}
+
+
+.dropdown-list .entry{
+    background-color: #f7e7c8;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.dropdown-list p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-list i{
+   
+}
+
+
+.show-more{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.arrow{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.expanded .arrow{
+    transform: rotate(180deg);
+}
+.dropdown button{
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: #f5d79e;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.dropdown button .arrow{
+    font-size: 1.5rem;
+}
+
+
+.kend-container{
+    background: #fffbf4;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.erf-container{
+    background-color: #fffbf4;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+
+.erf-icon-container img{
+    flex: 1 1 calc(33.333% - 8px);
+    object-fit: contain;
+    min-width: 0;
+}
+.erf-icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    padding: 15px;
+    
+}
+
+.erf-container h2{
+    text-align: center;
+    padding-top: 8px;
+}
+
+.erf-icon{
+    width: 100%;
+}
+
+.js-icon{
+    width:auto;
+    max-height: 80px;
+}
+
+.kend-container h2{
+    text-align: center;
+    padding-top: 8px;
+}
+
+.kend-icon-container img{
+    flex: 1 1 calc(33.333% - 8px);
+    object-fit: contain;
+    min-width: 0;
+}
+
+.kend-icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.kend-icon{
+    width: 100%;
+}
+
+@media (min-width:375px){
+    .js-icon{
+        max-height:100px;
+    }
+}
+
+@media (min-width:768px){
+
+    .dropdown{
+        width: 46%;
+        height: fit-content;
+    }
+
+    .erf-container, .kend-container{
+        width: 46%;
+        height: fit-content;
+    }
+
+    header{
+        min-height: 600px;
+    }
+
+    header svg{
+        max-width: 600px;
+        margin-right: 20%;
+    }
+}
+
+@media (min-width:1024px){
+
+    .js-icon{
+        max-height:140px;
+    }
+
+    .dropdown{
+        width: 47%;
+    }
+
+    .erf-container, .kend-container{
+        width: 47%;
+    }
+
+
+    header{
+        min-height: 700px;
+    }
+
+    header svg{
+        max-width: 700px;
+        margin-right: 20%;
+    }
+
+}
+
+@media (min-width:1440px){
+
+    .main-container{
+        max-width: 1140px;
+        margin: auto;
+        padding-left: 2%;
+        padding-right: 2%
+    }
+
+
+    header{
+        min-height:;
+    }
+
+    header svg{
+        max-width: 700px;
+        margin-right: 40%;
+    }
+}
+
+@media (min-width:1920px){
+    header{
+        min-height: 920px;
+    }
+
+    header svg{
+        max-width: 1200px;
+        margin-right: 35%;
+    }
+
 }

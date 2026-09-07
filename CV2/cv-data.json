@@ -1,0 +1,58 @@
+{
+  "CvData": [
+    {
+      "headline": "Auxo",
+      "workstation": "Junior suuport specialist",
+      "date": "Oktober 2025 - Maj 2026"
+    },
+    {
+      "headline": "Jeresefrie",
+      "workstation": "Front-End, hjemmeside ansvarlig",
+      "date": "2025 Marts - 2025 Juni"
+    },
+    {
+      "headline": "Politisk Ungdomsforening",
+      "workstation": "Bestyrelsesmedlem",
+      "date": "2020 - 2022"
+    },
+    {
+      "headline": "Midtjysk Efterskole, Ejstrupholm",
+      "workstation": "Hjælpelærer",
+      "date": "2020"
+    },
+    {
+      "headline": "Julecup",
+      "workstation": "Frivillig",
+      "date": "2016 - 2020"
+    },
+    {
+      "headline": "XL BYG, Bording",
+      "workstation": "Ungarbejder",
+      "date": "2016 - 2017"
+    }
+  ],
+  
+    "CvUddData": [
+    {
+      "headline": "Medieskolerne Viborg",
+      "station": "Webudvikler",
+      "date": "2021 - 2023"
+    },
+    {
+      "headline": "Herningsholm Erhvervsskole",
+      "station": "Byggemontagetekniker, GF 1 + 2",
+      "date": "2018 - 2019"
+    },
+    {
+      "headline": "Midtjysk Efterskole, Ejstrupholm",
+      "station": "10.kl.",
+      "date": "2017 - 2018"
+    },
+    {
+      "headline": "Bording Skole",
+      "station": "Folkeskolens afgangsprøve, 9.kl.",
+      "date": "2007 - 2017"
+    }
+  ]
+
+}

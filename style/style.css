@@ -145,9 +145,14 @@
 @media (max-width: 640px) {
   .menu-grid {
     grid-template-columns: 1fr;
+    gap: 100px;
   }
 
   .menu-box__headline {
     font-size: 3rem;
+  }
+
+  .menu-box--has-dropdown{
+   
   }
 }
