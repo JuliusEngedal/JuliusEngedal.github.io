@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background: linear-gradient(to right, black 1%, transparent 100%), url(imgs/pexels-scottwebb-5209186.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100vh; 
+}
+
+
+
+.header-text-container{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+    
+}
+
+header h1{
+    font-size: 4rem;
+    color: #ffc2c2;
+    text-align: center;
+    text-shadow: 6px 4px 3px black;
+}
+
+.span-line{
+    display: block;
+    border: 1px solid #ffc2c2;
+    text-shadow: 3px 3px 3px black;
+}
+
+.h1-sub{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 1.3rem;
+    color: #ffc2c2;
+    text-shadow: 3px 3px 3px black;
+}
+
+header ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+}
+
