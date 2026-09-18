@@ -1,54 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background:
+    linear-gradient(to right, black 1%, transparent 100%),
+    url(imgs/pexels-scottwebb-5209186.jpg);
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+}
+
+.header-text-container {
+  width: fit-content;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 5%;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #ffc2c2;
+  text-align: center;
+  text-shadow: 6px 4px 3px black;
+}
+
+.span-line {
+  display: block;
+  border: 1px solid #ffc2c2;
+  text-shadow: 3px 3px 3px black;
+  width: 105%;
+  align-self: center;
+}
+
+.h1-sub {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 1.3rem;
+  color: #ffc2c2;
+  text-shadow: 3px 3px 3px black;
+}
+
+header ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+}
+
+.om-mig-container {
+  height: 100vh;
+  display: flex;
+  background:
+    linear-gradient(to bottom, #791316 0%, rgba(155, 1, 4, 0) 20%),
+    url(imgs/pexels-cleo-beater-2150411100-35793175.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.om-mig-ekstra-con {
+  width: 45%;
+}
+
+.om-mig-tekst-ydre-con {
+  width: 45%;
+  margin: 5%;
+}
+
+.om-mig-tekst-indre-con {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bf5a5d;
+  padding: 5%;
+  border-radius: 10px;
+  padding-right: 10%;
+}
+
+.om-mig-tekst-indre-con h2 {
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 3px 2px 2px #ff9595;
+  padding-bottom: 15px;
+}
+
+.om-mig-tekst-indre-con p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.job-profil-con {
+  height: 100vh;
+  width: 100%;
+  background:
+    linear-gradient(rgb(0 0 0 / 19%), rgb(0 0 0 / 35%)),
+    url(imgs/pexels-nickcollins-1293120.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.profil-con {
+  width: 45%;
+  background-color: #bf5a5d;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.profil-tekst-con {
+  padding: 5%;
+}
+
+.profil-tekst-con h2{
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 3px 2px 2px #ff9595;
+  padding-bottom: 15px;
+}
+
+.profil-tekst-con p{
+font-size: 1.2rem;
+  color: #000000;
+}
+
+.job-con {
+  width: 45%;
+  display: flex;
 }
 
 
-header{
-    background: linear-gradient(to right, black 1%, transparent 100%), url(imgs/pexels-scottwebb-5209186.jpg);
-    background-size: cover;
-    width: auto;
-    height: 100vh; 
+
+.dropdown-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* critical — see note below */
 }
 
-
-
-.header-text-container{
-    width: 40%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 5%;
-    
+.dropdown-list {
+  overflow-y: auto;
+  transition: max-height 0.4s ease;
 }
-
-header h1{
-    font-size: 4rem;
-    color: #ffc2c2;
-    text-align: center;
-    text-shadow: 6px 4px 3px black;
-}
-
-.span-line{
-    display: block;
-    border: 1px solid #ffc2c2;
-    text-shadow: 3px 3px 3px black;
-}
-
-.h1-sub{
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    font-size: 1.3rem;
-    color: #ffc2c2;
-    text-shadow: 3px 3px 3px black;
-}
-
-header ul{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    list-style: none;
-}
-
