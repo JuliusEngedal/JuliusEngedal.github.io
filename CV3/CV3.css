@@ -112,7 +112,7 @@ header ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 5%;
   border-radius: 10px;
 }
 
@@ -132,21 +132,116 @@ font-size: 1.2rem;
   color: #000000;
 }
 
-.job-con {
-  width: 45%;
+
+.dropdowns-wrapper{
   display: flex;
+  width: 100%;
+  gap: 10px
+  ;
 }
 
+.dropdown-slot{
+  flex: 1;
+  position: relative;
+}
+
+.job-con {
+  flex: 1;              
+  flex-direction: row;  
+
+  margin: 5%;    
+  min-height: 0;      
+  flex-wrap: wrap;
+}
 
 
 .dropdown-box {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 0; /* critical — see note below */
+  width: 100%;
+  min-height: 0; 
+  max-height: 65vh;
+  
 }
+
 
 .dropdown-list {
   overflow-y: auto;
+  overflow-x: hidden;
   transition: max-height 0.4s ease;
+  background-color: #bf5a5d;
+  z-index: 1;
+  position: relative;
+}
+
+.entry{
+  background-color: #791316;
+  padding: 10px;
+}
+
+.profil-erfaring{
+  width: 100%;
+  z-index: 2;
+}
+
+.dropdown-box.expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  
+}
+
+.dropdown.expanded .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-box.expanded .arrow {
+  transform: rotate(180deg);
+}
+
+
+
+.be-container{
+  display: flex;
+  background-color: #bf5a5d;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+
+.erf-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 45%;
+}
+
+.kend-container{
+  width:45%;
+}
+
+.erf-icon{
+    flex: 1 1 calc(33.333% - 8px);
+    object-fit: contain;
+    min-width: 0;
+    max-height: 70px;
+    max-width: 70px;
+}
+
+
+
+.kend-icon{
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.be-container h2{
+  margin: auto;
 }

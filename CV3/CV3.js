@@ -8,6 +8,7 @@ async function initDropdowns() {
     const list = container.querySelector('.dropdown-list');
     const btn = container.querySelector('.show-more');
     const btnText = btn.querySelector('.btn-text');
+    const slot = container.parentElement; // .dropdown-slot
 
     list.innerHTML = data.map((item, i) => `
       <li class="entry ${i >= 2 ? 'hidden' : ''}">
@@ -28,39 +29,43 @@ async function initDropdowns() {
       list.style.maxHeight = height + 'px';
     };
 
+    setCollapsedHeight();
+
+    // lock the slot's height to the collapsed box's natural size, once
+    slot.style.minHeight = container.offsetHeight + 'px';
+
     if (data.length <= 2) {
       btn.style.display = 'none';
-      setCollapsedHeight();
       return;
     }
 
-    setCollapsedHeight();
-
     btn.addEventListener('click', () => {
-      const expanded = container.classList.toggle('expanded');
+  const isExpanding = !container.classList.contains('expanded');
 
-      if (expanded) {
-        list.querySelectorAll('.entry.hidden').forEach(el => {
-          el.style.display = 'block';
-        });
-
-        // cap growth at whatever space is left in the box, instead of full scrollHeight
-        const available = container.clientHeight - btn.offsetHeight;
-        const fullHeight = list.scrollHeight;
-        list.style.maxHeight = Math.min(fullHeight, available) + 'px';
-
-        btnText.textContent = 'Vis mindre';
-      } else {
-        setCollapsedHeight();
-        btnText.textContent = 'Vis mere';
-        list.addEventListener('transitionend', function hideAfterCollapse() {
-          list.querySelectorAll('.entry.hidden').forEach(el => {
-            el.style.display = 'none';
-          });
-          list.removeEventListener('transitionend', hideAfterCollapse);
-        });
-      }
+  if (isExpanding) {
+    container.classList.add('expanded');
+    list.querySelectorAll('.entry.hidden').forEach(el => {
+      el.style.display = 'block';
     });
+    list.style.maxHeight = '500px';
+    btnText.textContent = 'Vis mindre';
+  } else {
+    // start the collapse animation WHILE still absolute
+    list.style.maxHeight = (() => {
+      const visible = [...list.querySelectorAll('.entry:not(.hidden)')];
+      return visible.reduce((sum, el) => sum + getEntryHeight(el), 0) + 'px';
+    })();
+    btnText.textContent = 'Vis mere';
+
+    list.addEventListener('transitionend', function onCollapseEnd() {
+      list.querySelectorAll('.entry.hidden').forEach(el => {
+        el.style.display = 'none';
+      });
+      container.classList.remove('expanded'); // NOW switch back to normal flow
+      list.removeEventListener('transitionend', onCollapseEnd);
+    });
+  }
+});
   });
 }
 
